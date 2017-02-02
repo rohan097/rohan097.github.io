@@ -3,118 +3,131 @@
 <title>Rohan Prasad</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/w3.css">
+<link rel="stylesheet" href="css/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <style>
-  html
-  {
-    sroll-behviour:smooth
+  .container{
+    margin: 0  auto;
   }
-  body
-  {
-    margin:0;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Lato', sans-serif;
-  }
-  ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: 	#696969;
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-  display: inline-block;
-  color: 	#ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 22px;
-}
-
-ul.topnav li a:hover {background-color: #f2f2f2;}
-
-ul.topnav li.icon {display: none;}
-
-@media screen and (max-width:680px) {
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
-
-  ul.topnav.responsive {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: 	#696969;
-}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li a {
-    display: inline-block;
-    color: 	#ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 22px;
-  }
-
-  ul.topnav.responsive li a:hover {background-color: #f2f2f2;}
-
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-}
 </style>
-<body class="w3-grey">
-  <div>
-    <ul class="topnav w3-card-8 w3-Lato w3-center" id="myTopnav">
-      <li style="width:20%"><a href="index.html">Home</a></li>
-      <li style="width:20%"><a href="about.html">About</a></li>
-      <li style="width:20%"><a href="skills.html">Skills</a></li>
-      <li style="width:20%"><a href="projects.html">Projects</a></li>
-      <li style="width:20%"><a href="ContactMe.html">Contact</a></li>
-      <li class="icon">
-        <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-      </li>
-    </ul>
-<div id="home" style:"height:50%">
-  <div class="w3-container w3-text-white">
-    <div class="w3-display-middle w3-animate-opacity w3-center w3-animate-fade w3-text-black w3-border-top w3-border-bottom w3-hover-border-blue">
-  <h1 style="font-size:4vw">Rohan Prasad</h1>
-  <h1 style="font-size:3vw">A tech enthusiast and a Pythonista!</h1>
-</div>
-    </div>
-</div>
 <script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
+    $(document).ready(function()
+    {
+        $("#btn1").click(function()
+        {
+          $("#about,#skills,#projects,#contact").fadeOut();
+          $("#home").fadeIn();
+        });
+    });
+    $(document).ready(function()
+    {
+        $("#btn2").click(function()
+        {
+          $("#home,#skills,#projects,#contact").fadeOut();
+          $("#about").fadeIn();
+        });
+    });
+    $(document).ready(function()
+    {
+        $("#btn3").click(function()
+        {
+          $("#home,#about,#projects,#contact").fadeOut();
+          $("#skills").fadeIn();
+        });
+    });
+    $(document).ready(function()
+    {
+        $("#btn4").click(function()
+        {
+          $("#home,#skills,#skills,#contact").fadeOut();
+          $("#projects").fadeIn();
+        });
+    });
+    $(document).ready(function()
+    {
+        $("#btn5").click(function()
+        {
+          $("#home,#about,#skills,#projects").fadeOut();
+          $("#contact").fadeIn();
+        });
+    });
 </script>
+<body class="w3-light-grey">
+  <div class="w3-center w3-margin-top w3-xlarge">
+  <ul class="w3-pagination w3-center">
+  <li><a id="btn1" href="#home">Home</a></li>
+  <li><a id="btn2" href="#about">About</a></li>
+  <li><a id="btn3" href="#skills">Skills</a></li>
+  <li><a id="btn4" href="#projects">Projects</a></li>
+  <li><a id="btn5" href="#contact">Contact</a></li>
+  </ul>
+</div>
+<div id="home" class="w3-display-middle">
+  <div class="w3-container w3-animate-opacity w3-center w3-text-black">
+    <div class="w3-border-top w3-border-bottom w3-hover-border-blue">
+      <h1 style="font-size:4vw">Rohan Prasad</h1>
+      <h1 style="font-size:3vw">A tech enthusiast and a Pythonista!</h1>
+    </div>
+  </div>
+</div>
+<div id="about" class="w3-container w3-Lato w3-display-middle w3-center" style="display:none">
+    <div class="w3-card-16 w3-round-large w3-white" style="max-width:550px;max-height:550px">
+      <p style="font-size:24px">
+        I'm an ardent lover of technology.My interest are robotics
+        and machine learning. My hobbies include reading novels,
+        listening to music and cycling. I like to learn new
+        things and improve my skillset. I am a dedicated and hard
+        working person.
+     <p>
+    </div>
+  </div>
+</div>
+<div id="skills" class="w3-container w3-padding-large w3-Lato w3-display-middle w3-center" style="display:none">
+  <div class="w3-card-16 w3-white w3-round-large" style="width:350px;height:370px;max-width:550px;max-height:550px">
+    <h2>Skills</h2>
+    <ul class="w3-xlarge">
+      <li class="w3-border-top w3-font-xlarge w3-hover-border-blue">Python</li>
+      <li class="w3-border-top w3-font-xlarge w3-hover-border-blue">Robotics</li>
+      <li class="w3-border-top w3-hover-border-blue">Neural Networks</li>
+      <li class="w3-border-top w3-hover-border-blue">Machine Learning</li>
+      <li class="w3-border-top w3-hover-border-blue">Image Processing</li>
+      <li class="w3-border-top w3-hover-border-blue">C++</li>
+      <li class="w3-border-top w3-hover-border-blue">Arduino Programming</li>
+    </ul>
+  </div>
+</div>
+<div id="projects" class="w3-container w3-padding-large w3-Lato w3-display-middle w3-center" style="display:none">
+  <div class="w3-card-16 w3-white w3-round-large" style="width:350px;height:370px;max-width:550px;max-height:550px">
+    <h2>Projects</h2>
+    <ul class="w3-xlarge w3-padding-24">
+      <a href="https://github.com/rohan097/iEEG" style="text-decoration:none" target="_blank">
+        <li class="w3-border-top w3-hover-border-blue">Seizure Prediction of iEEG data</li>
+      </a>
+      <a href="https://github.com/rohan097/traffic-light" style="text-decoration:none" target="_blank">
+        <li class="w3-border-top w3-hover-border-blue">Automated Traffic Light System</li>
+      </a>
+      <li class="w3-border-top w3-hover-border-blue">Robotic Hand</li>
+      <li class="w3-border-top w3-hover-border-blue">Auto Levelling Quadcopter</li>
+    </ul>
+  </div>
+</div>
+<div id="contact" class="w3-container w3-Lato w3-display-middle w3-center w3-padding-large" style="display:none">
+  <div class="w3-card-16 w3-animate-opacity w3-round-large w3-white">
+    <img src="images/avatar.png" class="w3-round-large" style="width:100%;max-width:375px">
+    <h3>Rohan Prasad</h3>
+    <a href="mailto:rohan.prasad2015@vit.ac.in" target="_blank" style="text-decoration:None">
+      <img src="images/email.svg" alt="Email ID" title="rohan.prasad2015@vit.ac.in">
+    </a>
+    <a href="https://github.com/rohan097" target="_blank" style="text-decoration:None">
+      <img src="images/github-box.svg" alt="Github Profile">
+    </a>
+    <a href="https://in.linkedin.com/in/rohan-prasad-2b9224120" target="_blank" style="text-decoration:None">
+      <img src="images/linkedin-box.svg" alt="Linkedin Profile">
+    </a>
+  </div>
+</div>
+
 </body>
 </html>
