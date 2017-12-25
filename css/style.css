@@ -10,7 +10,7 @@ Author: themehippo.com
 
 # Body  (text): #3a4750
 # Heading Color #444444
-# Theme Color (link color) #ff5722
+# Theme Color (link color) #00838F
 # Mid grey (sub header) #f4f4f4
 # -------------------------------------------------------------------*/
 
@@ -30,16 +30,16 @@ Author: themehippo.com
 10. Portfolio / .portfolio-section
 11. Recent Reviews / .review-section
 12. Contact / .section-contact
-13. footer 
+13. footer
 
 ------------------------------------*/
 
 
 body {
     font-family : 'Hind', sans-serif;
-    font-size   : 15px;
+    font-size   : 16px;
     line-height : 1.8em;
-    color       : #989898;
+    color       : #546E7A;
     font-weight : 300;
     background  : #f8f8f8;
     }
@@ -60,31 +60,31 @@ h1 {
     }
 
 h2 {
-    font-size   : 18px;
+    font-size   : 22px;
     line-height : 1.8em;
     font-weight : 700;
     }
 
 h3 {
-    font-size   : 13px;
+    font-size   : 16px;
     line-height : 1.8em;
     font-weight : 700;
     }
 
 h4 {
-    font-size   : 15px;
+    font-size   : 16px;
     line-height : 1.8em;
     font-weight : 500;
     }
 
 h5 {
-    font-size   : 15px;
+    font-size   : 16px;
     line-height : 1.5em;
     font-weight : 500;
     }
 
 h6 {
-    font-size   : 15px;
+    font-size   : 16px;
     line-height : 1.5em;
     }
 
@@ -92,7 +92,7 @@ h6 {
  * LINK STYLE
  *------------------------------------------*/
 a {
-    color              : #ff5722;
+    color              : #00838F;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -111,7 +111,7 @@ a:active {
 a:hover,
 a:focus {
     text-decoration : none;
-    color           : #ff5722;
+    color           : #00838F;
     }
 
 p {
@@ -150,7 +150,7 @@ ul {
 
 /*btn-primary*/
 .btn-primary {
-    background-color : #ff5722;
+    background-color : #00838F;
     }
 
 .btn-primary:hover,
@@ -239,7 +239,7 @@ button:focus,
     padding    : 50px 0;
     margin     : 0;
     position   : relative;
-    border-top : 5px solid #ff5722;
+    border-top : 5px solid #00838F;
     }
 
 .header .profile-img {
@@ -258,26 +258,26 @@ button:focus,
 
 .header .name-wrapper span {
     font-size : 24px;
-    color     : #ff5722;
+    color     : #00838F;
     }
 
 .header .personal-details {
-    margin : 10px 0;
+    margin : 14px 0;
     }
 
 .header .personal-details strong {
-    font-size   : 13px;
+    font-size   : 16px;
     color       : #444444;
     display     : block;
     line-height : 1;
     }
 
 .header .personal-details small {
-    font-size : 12px;
+    font-size : 14px;
     }
 
 .header .personal-details span {
-    color : #989898;
+    color : #546E7A;
     }
 
 @media (max-width : 768px) {
@@ -314,8 +314,8 @@ button:focus,
 
 .social-icon li a {
     display       : block;
-    font-size     : 12px;
-    color         : #333333;
+    font-size     : 16px;
+    color         : #004D40;
     width         : 34px;
     height        : 34px;
     line-height   : 33px;
@@ -325,7 +325,7 @@ button:focus,
     }
 
 .social-icon li a:hover {
-    border-color : #cccccc;
+    border-color : #B2DFDB;
     }
 
 
@@ -372,7 +372,7 @@ button:focus,
     }
 
 .progress-item .progress-title {
-    font-size     : 12px;
+    font-size     : 14px;
     font-weight   : 400;
     display       : inline-block;
     margin-bottom : 5px;
@@ -386,14 +386,15 @@ button:focus,
     }
 
 .progress-item .progress-bar {
-    background-color : #ff5722;
+    background-color : #00838F;
     box-shadow       : none;
     text-align       : right;
     }
 
 .progress-item .progress-percent {
-    font-size        : 10px;
+    font-size        : 12px;
     background-color : #313131;
+    color            : #ECEFF1;
     position         : absolute;
     top              : 5px;
     padding          : 0 8px;
@@ -477,129 +478,6 @@ button:focus,
     }
 
 
-/*-----------------
- * Review
- *-----------------*/
-
-#review .owl-wrapper .owl-item{
-    padding-right: 20px;
-    }
-#review .media-left{
-    padding-right: 15px;
-    }
-#review .media-left img{
-    width: 50px;
-    border-radius: 3px;
-    }
-
-#review .user-name{
-    color: #444;
-    font-weight: 500;
-    }
-
-#review .review-text{
-    margin: 10px 0;
-    }
-
-/* rating */
-
-#review .rating{
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    }
-
-#review .rating::after{
-    content: attr(data-star_rating);
-    padding: 3px 5px 0;
-    color: #444;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 21px;
-    border-radius: 2px;
-    margin-left: 5px;
-    }
-
-#review .rating-total{
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    position: relative;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 80px;
-    height: 16px;
-    margin-top: -2px;
-    }
-
-#review .rating-progress{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    }
-
-#review .rating-progress::after,
-#review .rating-progress::before{
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-size: 80px 16px;
-    background-repeat: no-repeat;
-    content: "";
-    }
-
-#review .rating-progress::before{
-    background-image: url("../img/rating-background.svg");
-    }
-
-#review .rating-progress::after{
-    background-image: url("../img/rating-foreground.svg");
-    }
-
-#review .rating-progress.rate-0::after{
-    width: 0;
-    }
-
-/* Rating Percent */
-
-#review .rating-progress.rate-1::after{
-    width: 20%;
-    }
-
-#review .rating-progress.rate-2::after{
-    width: 40%;
-    }
-
-#review .rating-progress.rate-3::after{
-    width: 60%;
-    }
-
-#review .rating-progress.rate-4::after{
-    width: 80%;
-    }
-
-#review .rating-progress.rate-5::after{
-    width: 100%;
-    }
-
-
 /* Pagination */
 
 .owl-controls .owl-page{
@@ -619,26 +497,6 @@ button:focus,
 .owl-controls .owl-page.active span{
     opacity: 1;
     box-shadow: 0 0 0 1px #000;
-    }
-
-
-/*-------------------
- * Market Place Profile
- *-------------------*/
-.profile-item{
-    margin-bottom: 30px;
-    }
-
-.profile-item .media-object{
-    width: 30px;
-    }
-
-.profile-item  a{
-    color: #444;
-    }
-
-.profile-item  a:hover{
-    color: #ff5722;
     }
 
 /*-------------------
@@ -665,46 +523,6 @@ button:focus,
     color : #888888;
     }
 
-/*-------------------
- * Contact
- *-------------------*/
-
-.section-contact address strong {
-    font-size      : 13px;
-    text-transform : uppercase;
-    }
-
-.feedback-form {
-    margin-top : 50px;
-    }
-
-/*-------------------
- * Form Style
- *-------------------*/
-
-.form-group label {
-    font-weight : normal;
-    font-size   : 13px;
-    }
-
-.form-control {
-    height        : 46px;
-    line-height   : 46px;
-    padding       : 0 15px;
-    color         : #969595;
-    border-color  : #f8f8f8;
-    border-radius : 0;
-    box-shadow    : none;
-    box-sizing    : border-box;
-    background    : #eeeeee;
-    }
-
-.form-control:focus,
-.form-control:active {
-    box-shadow   : none;
-    background   : #ffffff;
-    border-color : #000000;
-    }
 
 /* --------------------------------------------
  *   Footer
