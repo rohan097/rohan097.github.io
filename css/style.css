@@ -162,17 +162,17 @@ ul {
 
 /*btn-default*/
 .btn-default {
-    color            : #2a54f5;
+    color            : #00838F;
     background-color : transparent;
-    border           : 2px solid #2a54f5;
+    border           : 2px solid #00838F;
     }
 
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active:focus {
-    background   : #2a54f5;
+    background   : #00838F;
     color        : #ffffff;
-    border-color : #2a54f5;
+    border-color : #00838F;
     }
 
 button:focus,
