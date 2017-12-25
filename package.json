@@ -1,29 +1,29 @@
 {
-    "title": "Freelancer",
-    "name": "startbootstrap-freelancer",
-    "version": "4.0.0-alpha",
-    "description": "A freelancer portfolio HTML theme for Bootstrap.",
+    "title": "Rohan Website",
+    "name": "Rohan Prasad",
+    "version": "1.0.0-alpha",
+    "description": "My personal website, to let you know more about me.",
     "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
+        "student",
+        "machine learning",
+        "deep learning",
+        "robotics",
+        "VIT",
+        "GDG"
     ],
-    "homepage": "http://startbootstrap.com/template-overviews/freelancer",
+    "homepage": "http://rohanprasad.me",
     "bugs": {
         "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer/issues",
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Rohan Prasad",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Rohan Prasad (https://www.linkedin.com/in/rohan97)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
+        "url": "https://github.com/rohan097/rohan.097.github.io/"
     },
     "dependencies": {
         "bootstrap": "^4.0.0-alpha.6",
